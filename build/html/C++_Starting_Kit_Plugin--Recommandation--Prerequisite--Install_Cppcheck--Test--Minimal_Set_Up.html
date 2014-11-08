@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Minimal set up for Sublime Linter - Cppcheck &mdash; C++ Starting Kit Project - Guide 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="C++ Starting Kit Project - Guide 0.0.1 documentation" href="index.html"/>
+        <link rel="up" title="How to test it" href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test.html"/>
+        <link rel="next" title="Test Sublime Linter - cppcheck" href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test--Test_File.html"/>
+        <link rel="prev" title="How to test it" href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> C++ Starting Kit Project - Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Author.html">Author</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Author.html#introduction">Introduction</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Project.html">Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Project.html#features">Features</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Documentation.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Windows_7.html">Windows 7</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Windows_7--Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Windows_7--Prerequisite.html">Prerequisite</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sublime_Text.html">Sublime Text</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sublime_Text--Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sublime_Text--Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sublime_Text--Usage.html">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sublime_Text--Recommandation.html">Recommandation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="C++_Starting_Kit_Plugin.html">C++ Starting Kit Plugin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="C++_Starting_Kit_Plugin--Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="C++_Starting_Kit_Plugin--Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="C++_Starting_Kit_Plugin--Usage.html">Usage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="C++_Starting_Kit_Plugin--Recommandation.html">Recommandation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Console_2.html">Console 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Console_2--Presentation.html">Presentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Console_2--Installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Console_2--Usage.html">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Console_2--Recommandation.html">Recommandation</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">C++ Starting Kit Project - Guide</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="C++_Starting_Kit_Plugin.html">C++ Starting Kit Plugin</a> &raquo;</li>
+      
+          <li><a href="C++_Starting_Kit_Plugin--Recommandation.html">Recommandation</a> &raquo;</li>
+      
+          <li><a href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck.html">Install Cppcheck</a> &raquo;</li>
+      
+          <li><a href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test.html">How to test it</a> &raquo;</li>
+      
+    <li>Minimal set up for Sublime Linter - Cppcheck</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test--Minimal_Set_Up.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="minimal-set-up-for-sublime-linter-cppcheck">
+<h1>Minimal set up for Sublime Linter - Cppcheck<a class="headerlink" href="#minimal-set-up-for-sublime-linter-cppcheck" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The following steps assume that you strictly followed the <a class="reference external" href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--How.html">set up Cppcheck for Sublime Text</a> section.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="open-sublime-linter-preferences">
+<h2>Open Sublime Linter preferences<a class="headerlink" href="#open-sublime-linter-preferences" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first">Go the <strong>Preferences</strong> menu</p>
+<blockquote>
+<div><ul class="simple">
+<li>Then <strong>Package Settings</strong></li>
+<li>Then <strong>Sublime Linter</strong></li>
+<li>Choose <strong>Settings - User</strong></li>
+<li><strong>Locate the following lines</strong></li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>&quot;linters&quot;: {
+    &quot;cppcheck&quot;: {
+        &quot;@disable&quot;: true,
+        &quot;args&quot;: [],
+        &quot;enable&quot;: &quot;style&quot;,
+        &quot;excludes&quot;: [],
+        &quot;std&quot;: []
+}
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="enable-sublime-linter-cppcheck">
+<h2>Enable Sublime Linter - cppcheck<a class="headerlink" href="#enable-sublime-linter-cppcheck" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Replace <tt class="docutils literal"><span class="pre">true</span></tt> by <tt class="docutils literal"><span class="pre">false</span></tt> for the <tt class="docutils literal"><span class="pre">&quot;&#64;disable&quot;</span></tt> parameter</li>
+<li>You must have something like this</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>&quot;@disable&quot;: false,
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="specify-a-standard-syntax-to-sublime-linter-cppcheck">
+<h2>Specify a standard syntax to Sublime Linter - cppcheck<a class="headerlink" href="#specify-a-standard-syntax-to-sublime-linter-cppcheck" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Add <tt class="docutils literal"><span class="pre">&quot;c++11&quot;</span></tt> for the <tt class="docutils literal"><span class="pre">&quot;std&quot;</span></tt> parameter</li>
+<li>You must have something like this</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>&quot;std&quot;: [&quot;c++11&quot;]
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Now <strong>Sublime Linter - cppcheck</strong> has its minimal setup.</p>
+<p class="last">It must work at this point but if you want to be sure follow the <a class="reference external" href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test--Test_File.html">testing process</a> section</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test--Test_File.html" class="btn btn-neutral float-right" title="Test Sublime Linter - cppcheck"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--Test.html" class="btn btn-neutral" title="How to test it"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Will Alvidi.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
