@@ -33,7 +33,7 @@ From a path
 Create a .profile file
 ^^^^^^^^^^^^^^^^^^^^^^
 
-    * Type
+    * Type from your terminal
     
     ::
     
@@ -41,4 +41,4 @@ Create a .profile file
 
 .. warning:: This step can't be directly done from the **Explorer** you must use the terminal.
 
-.. note:: You know have an editable ``.profile`` file.
+.. note:: You now have an editable ``.profile`` file.
