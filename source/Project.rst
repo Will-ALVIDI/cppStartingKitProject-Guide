@@ -4,7 +4,7 @@ Project
 Features
 --------
 
-The **C++ Starting Kit Project** is a minimal set of useful tools and tips for **C++ and Sublime Text beginners**. It provides :
+The **C++ Starting Kit Project** is a minimal set of useful tools and tips for **C++** and **Sublime Text beginners**. It provides :
 
     * The C++ Starting Kit Plugin
         * C, C++ and C++11 combined and improved syntax definition for Sublime Text.
