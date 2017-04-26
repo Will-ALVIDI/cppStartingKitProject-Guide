@@ -26,7 +26,7 @@ Create a testing file
 
  A ``}`` must be added after ``return 0;`` if you want your program to work correctly. 
  
- But **this is not what you need to test Sublime Linter - ccpcheck**.
+ But **this is not what you need to test Sublime Linter - cppcheck**.
  
 
 .. _set up Cppcheck for Sublime Text: C++_Starting_Kit_Plugin--Recommandation--Prerequisite--Install_Cppcheck--How.html
