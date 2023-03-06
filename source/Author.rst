@@ -34,4 +34,4 @@ Enjoy.
 
 Will Alvidi
 
-will.alvidi@gmail.com
+will.alvidi@pm.me
